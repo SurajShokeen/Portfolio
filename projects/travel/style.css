@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: #000;
+    font-size: 18px;
+}
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(41, 46, 51, 0.45), rgba(41, 46, 51, 0.45)),url(https://assets.nicepagecdn.com/d2cc3eaa/5380758/images/silhouette-person-standing-top-hill-beautiful-colorful-sky-morning-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 150px;
+    padding-top: 130px;
+    position: relative;
+}
+
+.section-1 h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: "Lato";
+    animation: right-animate 1s linear .8s 1;
+}
+
+.section-1 h1 {
+    font-size: 96px;
+    line-height: 95px;
+    margin-bottom: 80px;
+    color: #fff;
+    font-family: "Lato";
+    animation: right-animate 1s linear .8s 1;
+}
+
+.section-1 a {
+    padding: 20px 55px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+    transition: all .3s linear;
+    animation: opacity 2s linear 1s 1;
+}
+
+@keyframes opacity {
+    0%{margin-left: -50%; opacity: 0;}
+    100%{margin-left: 0; opacity: 1;}
+}
+
+.section-1 a:hover {
+    background: #fff;
+    color: #000;
+}
+
+@keyframes right-animate {
+    0%{transform: translateX(50%); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+
+
+.section-2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #293233;
+    padding: 60px 50px;
+}
+
+.section-2 .top-div h1 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: "Lato";
+}
+
+.section-2 .cards {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.section-2 .cards .card {
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2 .cards .card .content {
+    width: 80%;
+    height: 25%;
+    text-align: center;
+    border-bottom: 2px solid #dddddd;
+    margin-top: 20px;
+}
+
+.section-2 .cards .card .content h3 {
+    font-family: "Lato";
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section-2 .cards .card .content p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.section-2 .cards .card .img-div {
+    width: 100%;
+    height: 75%;
+}
+
+.section-2 .cards .card .img-div img {
+    width: 300px;
+    height: 300px;
+    border: 8px solid #f58d54;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.section-3 {
+    width: 100%;
+    height: 150vh;
+    background-color: #293233;
+    position: relative;
+}
+
+.section-3 img {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15%;
+    top: 17%;
+    z-index: 1;
+}
+
+.section-3 .top-circle {
+    width: 300px;
+    height: 300px;
+    border: 50px solid #435152;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 11%;
+}
+
+.section-3 .left-circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: #f58d54;
+    position: absolute;
+    top: 64%;
+    left: 13%;
+    z-index: 2;
+}
+
+.section-3 .circle-bottom {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 25px solid #f58d54;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+}
+
+.section-4 {
+    width: 100%;
+    height: 100vh;
+    background: #293233;
+}

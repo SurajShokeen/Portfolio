@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,rgba(33,46,50,0.99),rgba(39,79,64,0.99));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 85%;
+    height: 85vh;
+    background: linear-gradient(to right,rgba(23,79,70,0.8),rgba(142,181,119,0.7));
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .top-left-div {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 15px;
+    padding-left: 20px;
+}
+
+.main .top-left-div img {
+    width: 40px;
+    margin-right: 6px;
+}
+
+.main .top-left-div ul {
+    display: flex;
+    gap: 20px;
+    margin-left: 150px;
+    font-weight: 400;
+    transition: all 0.3s linear;
+}
+
+.main .top-left-div ul li {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.main .top-left-div ul li:hover {
+    color: #eebc4b;
+}
+
+.main .top-right-div {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.main .top-right-div .cart {
+    background: #eebc4b;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+
+.main .top-right-div .menu {
+    height: 11vh;
+    padding: 0 45px;
+    background: #376147;
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .left-content {
+    color: #fff;
+    padding-left: 60px;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.main .left-content p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main .left-content h1 {
+    font-size: 90px;
+    font-weight: 900;
+    margin-top: -5px;
+}
+
+.main .left-content .para {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.main .left-content button {
+    /* width: 120px; */
+    height: 35px;
+    /* text-align:start; */
+    padding-left: 20px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 2px solid #dbb34b;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    position: relative;
+}
+
+.main .left-content .arrow {
+    position: absolute;
+    background: #dbb34b;
+    right:-1%;
+    top: -1%;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.main .right-content {
+    width: 40%;
+    height: 74vh;
+    background: linear-gradient(to right,rgba(212,239,198,0.8),rgba(157,196,133,0.99));
+    border-top-left-radius: 20%;
+}
+
+.main .bottom-div {
+    width: 90%;
+    height: 12vh;
+    background: #376147;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 50px;
+}
+
+.main .cactus {
+    position: absolute;
+    right: 10%;
+    top: 7%;
+    width: 500px;
+    height: 550px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

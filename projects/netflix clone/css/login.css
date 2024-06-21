@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    padding: 25px 60px;
+    z-index: 1;
+}
+
+.form-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    padding: 60px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.form-bg h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-bg form {
+    margin: 25px 0 65px;
+}
+
+form .form-input {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.form-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px
+}
+
+.form-input input:is(:focus, :valid) {
+    padding: 16px 20px 0;
+}
+
+.form-input label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    transition: all 0.1s ease;
+}
+
+.form-input input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    background: #e50914;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    transition: all 0.1s ease;
+}
+
+form button:hover {
+    background: #e40812;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember-me {
+    display: flex;
+}
+
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+    cursor: pointer;
+}
+
+form .form-help:where(label, a) {
+    font-size: 0.9rem;
+}
+
+.form-bg :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+
+.form-bg p a {
+    color: #fff;
+}
+
+.form-bg small {
+    margin-top: 15px;
+    display: block;
+}
+
+.form-bg small a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.form-bg a {
+    text-decoration: none;
+}
+
+.form-bg a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body::before {
+        display: none;
+    }
+
+    nav,
+    .form-bg {
+        padding: 20px;
+    }
+
+    nav a img {
+        width: 140px;
+    }
+
+    .form-bg {
+        top: 43%;
+        width: 100%;
+    }
+    .form-bg form{
+        margin: 25px 0 40px;
+    }
+}
+
+
+
+

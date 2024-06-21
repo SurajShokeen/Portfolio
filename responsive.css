@@ -1,0 +1,290 @@
+/* 980px responsive */
+
+@media (max-width: 980px) {
+  .section-1 .left-div .circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-1 .right-div h1 {
+    font-size: 40px;
+  }
+
+  .section-1 .right-div h3 {
+    font-size: 25px;
+  }
+
+  .section-1 .right-div h3 span {
+    font-size: 25px;
+  }
+
+  .section-1 .right-div p {
+    font-size: 15px;
+  }
+
+  .section-1 .right-div .icons {
+    font-size: 20px;
+  }
+
+  /* .section-1 .right-div .icons .icon-border {
+        padding: 6px 6px;
+    } */
+
+  .section-1 .right-div .btn a {
+    font-size: 15px;
+  }
+
+  .service-section h1 {
+    font-size: 40px;
+  }
+
+  .service-section .box-container .box {
+    width: 300px;
+    height: 280px;
+  }
+
+  .service-section .box-container .box .content .icon {
+    padding: 10px 10px;
+    margin-top: 15px;
+  }
+
+  .service-section .box-container .box .content .title {
+    margin-top: 15px;
+    font-size: 19px;
+  }
+
+  .service-section .box-container .box .content .description {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 13.7px;
+  }
+
+  .container .skills-section h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  .container .skills-section .card-container {
+    width: 62%;
+  }
+
+  .container .skills-section .card-container .card-1 {
+    width: 140px;
+    height: 135px;
+  }
+}
+
+/* 768px responsive */
+
+@media (max-width: 768px) {
+  .section-1 {
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .section-1 .left-div .circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  .section-1 .right-div {
+    align-items: center;
+  }
+
+  .section-1 .right-div h1 {
+    margin-bottom: 0;
+    font-size: 35px;
+  }
+
+  .section-1 .right-div h3 {
+    margin-bottom: 10px;
+  }
+
+  .section-1 .right-div p {
+    margin-bottom: 20px;
+  }
+
+  .section-1 .right-div .icons {
+    margin-bottom: 25px;
+  }
+
+  .service-section {
+    padding-top: 25px;
+  }
+
+  .skills-section {
+    padding-top: 25px;
+  }
+
+  .education-timeline::after {
+    height: 100%;
+  }
+
+  .service-section h1::before {
+    right: 64%;
+  }
+
+  .service-section h1::after {
+    left: 64%;
+  }
+
+  .projects-section h1::before {
+    right: 67%;
+  }
+
+  .projects-section h1::after {
+    left: 67%;
+  }
+
+  .skills-section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-section h1::before {
+    right: 63%;
+  }
+
+  .skills-section h1::after {
+    left: 63%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar .logo {
+    font-size: 30px;
+  }
+
+  .navbar .nav-list {
+    height: 82vh;
+  }
+
+  .section-1 .left-div .circle {
+    width: 185px;
+    height: 180px;
+    margin-top: -150px;
+  }
+
+  .section-1 .right-div h1 {
+    font-size: 25px;
+    width: 200px;
+    margin-top: 15px;
+  }
+
+  .section-1 .right-div h3 {
+    font-size: 25px;
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .section-1 .right-div p {
+    font-size: 14px;
+    width: 290px;
+    margin-bottom: 30px;
+  }
+
+  .section-1 .right-div .btn {
+    width: 235px;
+    margin-top: 20px;
+  }
+
+  .service-section{
+    margin-top: -100px;
+  }
+
+  .service-section h1 {
+    font-size: 30px;
+  }
+
+  .service-section h1::before {
+    right: 70%;
+  }
+
+  .service-section h1::after {
+    left: 70%;
+  }
+
+  .service-section .box-container .box {
+    width: 240px;
+    height: 280px;
+  }
+
+  .service-section .box-container .box .content{
+    text-align: center;
+  }
+
+  .service-section .box-container .box .content .icon{
+    margin-top: -15px;
+  }
+
+  .service-section .box-container .box .content .title{
+    width: 180px;
+  }
+
+  /* .service-section .box-container .box .content .description{
+    width: 190px;
+    text-align: center;
+  } */
+
+  .projects-section h1{
+    font-size: 30px;
+  }
+
+  .projects-section h1::before{
+    right: 70%;
+  }
+
+  .projects-section h1::after{
+    left: 70%;
+  }
+
+  .projects-section .cards-container .cards .content {
+    width: 270px;
+    height: 180px;
+  }
+
+  .projects-section .cards-container .cards img{
+    width: 270px;
+    height: 180px;
+    top: 18%;
+  }
+
+  .skills-section h1 {
+    font-size: 30px;
+  }
+
+  .skills-section h1::before{
+    right: 65%;
+  }
+
+  .skills-section h1::after{
+    left: 65%;
+  }
+
+  .skills-section .content .right-div{
+    grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 170px);
+  }
+
+  .skills-section .content .left-div{
+    width: 110%;
+    padding: 0;
+  }
+
+  .skills-section .content .left-div .right{
+    width: 300px;
+  }
+
+  .skills-section .content .left-div .right .bars{
+    margin-bottom: 20px;
+    
+  }
+}

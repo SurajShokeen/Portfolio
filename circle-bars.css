@@ -1,0 +1,50 @@
+.circle-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#7edd0f 30deg, rgba(0, 0, 0, 0.1));
+    box-shadow: -4px -4px 8px -1px rgba(255, 255, 255, .63);
+    transition: .3s all linear;
+    color: #fff;
+}
+
+.circle-bar h3{
+    z-index: 10;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.circle-bar::before {
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: rgb(24, 23, 24);
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7);
+    transition: .3s all linear;
+}
+.value{
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media (max-width: 600px){
+    .circle-bar{
+        height: 120px;
+        width: 120px;
+      }
+    
+      .circle-bar::before{
+        height: 100px;
+        width: 100px;
+      }
+}
