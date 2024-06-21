@@ -930,9 +930,9 @@ body {
   position: absolute;
   /* border: 20px solid #222; */
   width: 98%;
-  height: 97%;
+  height: 98%;
   left: 1%;
-  top: 1.5%;
+  top: 1%;
   inset: 2;
   background: #111111;
   z-index: 1;

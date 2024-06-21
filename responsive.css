@@ -317,3 +317,22 @@
     width: 100%;
   }
 }
+
+@media (max-width: 500px){
+  .contact-section .contact-container .info,
+  .contact-section .contact-container .form{
+    width: 300px;
+  }
+
+  .contact-section .contact-container .form form{
+  
+  }
+
+  .contact-section .contact-container .form form h2{
+    font-size: 24px;
+  }
+
+  .contact-section .contact-container .form form .input-box span{
+    font-size: 15px;
+  }
+}
