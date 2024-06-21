@@ -814,6 +814,7 @@ body {
   gap: 50px;
   margin-top: 30px;
   /* background: #bc0eba; */
+  position: relative;
 }
 
 .contact-section .contact-container .info {

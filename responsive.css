@@ -307,4 +307,13 @@
   footer .span-2{
     font-size: 12px;
   }
+
+  .contact-section .contact-container{
+    flex-direction: column;
+  }
+
+  .contact-section .contact-container .info,
+  .contact-section .contact-container .form{
+    width: 100%;
+  }
 }
