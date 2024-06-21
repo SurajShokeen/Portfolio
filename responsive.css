@@ -192,7 +192,7 @@
   }
 
   .section-1 .right-div .btn {
-    width: 235px;
+    width: 250px;
     margin-top: 20px;
   }
 
@@ -286,5 +286,25 @@
   .skills-section .content .left-div .right .bars{
     margin-bottom: 20px;
     
+  }
+
+  .contact-section .content h2 {
+    font-size: 26px;
+  }
+
+  .contact-section .content p::before{
+    left: 95%;
+  }
+
+  .contact-section .content p::after{
+    right: 95%;
+  }
+
+  footer{
+    font-size: 12px;
+  }
+
+  footer .span-2{
+    font-size: 12px;
   }
 }
