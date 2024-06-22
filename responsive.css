@@ -335,4 +335,8 @@
   .contact-section .contact-container .form form .input-box span{
     font-size: 15px;
   }
+
+  .wrapper i {
+    display: none;
+  }
 }

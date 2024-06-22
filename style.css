@@ -453,97 +453,115 @@ body {
   box-shadow: 0 0 30px #7edd0f;
 }
 
-.projects-section {
+.wrapper {
   width: 100%;
-  min-height: 100vh;
-}
-
-.projects-section h1 {
-  color: #fff;
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 40px;
+  height: 70vh;
   position: relative;
-}
-
-.projects-section h1::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 58%;
-  background: #7edd0f;
-  width: 70px;
-  height: 4px;
-  border-radius: 8px;
-}
-
-.projects-section h1::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 58%;
-  background: #7edd0f;
-  width: 70px;
-  height: 4px;
-  border-radius: 8px;
-}
-
-.projects-section .cards-container {
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 90px;
-  position: relative;
+  padding: 0 70px;
 }
-
-.projects-section .cards-container .cards {
-  position: relative;
-}
-
-.projects-section .cards-container .cards .content {
-  width: 380px;
-  height: 220px;
-  background: #000;
-  color: #7edd0f;
-  border-radius: 8px;
-  transition: all 0.3s linear;
-}
-
-.projects-section .cards-container .cards .content p {
-  text-align: right;
-  /* color: #fff; */
-  margin-right: 15px;
-  padding-top: 2px;
-  font-size: 22px;
-}
-
-.projects-section .cards-container .cards img {
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
   position: absolute;
-  object-fit: cover;
-  top: 16%;
-  left: -11%;
-  width: 380px;
-  height: 220px;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: 45px;
+}
+.wrapper i:last-child {
+  right: 45px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
   border-radius: 8px;
-  transition: all 0.3s linear;
-  opacity: 0.8;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #000;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
 }
 
-.projects-section .cards-container .cards:hover img {
-  opacity: 1;
+.carousel .card .img {
+  /* background: #8B53FF; */
+  /* height: 148px; */
+  /* width: 148px; */
+  /* border-radius: 50%; */
+}
+.card .img img {
+  width: 400px;
+  height: 200px;
+  /* height: 140px; */
+  /* border-radius: 50%; */
+  object-fit: cover;
+  /* border: 4px solid #fff; */
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  color: #fff;
+}
+.carousel .card span {
+  color: #6a6d78;
+  font-size: 1.31rem;
 }
 
-.projects-section .cards-container .cards img:hover {
-  transform: scale(1.04);
-  /* opacity: 1; */
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
 }
 
-.projects-section .cards-container .cards:hover .content {
-  background: #7ddd0fdd;
-  color: #000;
-  font-weight: 400;
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
 
 .skills-section {
@@ -842,10 +860,10 @@ body {
   color: #7edd0f;
   border-radius: 50%;
   font-size: 20px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
-.contact-section .contact-container .info .box .icon:hover{
+.contact-section .contact-container .info .box .icon:hover {
   background: #7edd0f;
   color: #000;
   border: 2px solid #fff;
@@ -953,25 +971,25 @@ body {
   }
 }
 
-.contact-section .contact-container .form form{
+.contact-section .contact-container .form form {
   position: relative;
   z-index: 10;
 }
 
-.contact-section .contact-container .form form h2{
+.contact-section .contact-container .form form h2 {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
 }
 
-.contact-section .contact-container .form form .input-box{
+.contact-section .contact-container .form form .input-box {
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
 
 .contact-section .contact-container .form form .input-box input,
-.contact-section .contact-container .form form .input-box textarea{
+.contact-section .contact-container .form form .input-box textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 17px;
@@ -984,7 +1002,7 @@ body {
   resize: none;
 }
 
-.contact-section .contact-container .form form .input-box span{
+.contact-section .contact-container .form form .input-box span {
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -992,19 +1010,25 @@ body {
   font-size: 17px;
   margin: 10px 0;
   color: #fff;
-  transition: .5s linear;
+  transition: 0.5s linear;
 }
 
-.contact-section .contact-container .form form .input-box input:focus~span,
-.contact-section .contact-container .form form .input-box textarea:focus~span,
-.contact-section .contact-container .form form .input-box input:valid~span,
-.contact-section .contact-container .form form .input-box textarea:valid~span{
+.contact-section .contact-container .form form .input-box input:focus ~ span,
+.contact-section .contact-container .form form .input-box textarea:focus ~ span,
+.contact-section .contact-container .form form .input-box input:valid ~ span,
+.contact-section
+  .contact-container
+  .form
+  form
+  .input-box
+  textarea:valid
+  ~ span {
   color: #7edd0f;
   font-size: 15px;
   transform: translateY(-24px);
 }
 
-.contact-section .contact-container .form form .input-box input[type="submit"]{
+.contact-section .contact-container .form form .input-box input[type="submit"] {
   width: 100%;
   background: #7edd0f;
   padding: 10px;
@@ -1015,7 +1039,7 @@ body {
   font-weight: 500;
 }
 
-.contact-section .content p::before{
+.contact-section .content p::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1026,7 +1050,7 @@ body {
   background: #7edd0f;
 }
 
-.contact-section .content p::after{
+.contact-section .content p::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1037,7 +1061,7 @@ body {
   background: #7edd0f;
 }
 
-footer{
+footer {
   height: 5vh;
   background: #000;
   color: #fff;
@@ -1049,11 +1073,13 @@ footer{
   font-size: 15px;
 }
 
-footer .span-2{
+footer .span-2 {
   color: #7edd0f;
 }
 
-footer span{
+footer span {
   font-size: 19px;
   font-weight: 500;
 }
+
+/* /////////////////////////////////////// */
