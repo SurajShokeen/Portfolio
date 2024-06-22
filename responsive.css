@@ -337,6 +337,16 @@
   }
 
   .wrapper i {
+    /* display: none; */
+    z-index: 10;
+  }
+
+  #cursor{
     display: none;
+  }
+
+  .card .img img{
+    width: 200px;
+    
   }
 }

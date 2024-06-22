@@ -533,6 +533,7 @@ body {
   flex-direction: column;
   border-radius: 8px;
   transition: all .3s linear;
+  position: relative;
 }
 
 .carousel .card:hover{
@@ -541,9 +542,10 @@ body {
 
 .carousel .card .img {
   /* background: #8B53FF; */
-  /* height: 148px; */
-  /* width: 148px; */
+  /* width: 400px;
+  height: 200px; */
   /* border-radius: 50%; */
+  /* position: relative; */
 }
 .card .img img {
   width: 400px;

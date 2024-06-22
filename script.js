@@ -302,7 +302,7 @@ const infiniteScroll = () => {
 }
 
 const autoPlay = () => {
-    if(window.innerWidth < 200 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    if(window.innerWidth < 500 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
     // Autoplay the carousel after every 2000 ms
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2000);
 }
