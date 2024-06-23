@@ -316,12 +316,19 @@
   .contact-section .contact-container .form{
     width: 100%;
   }
+
+  .wrapper h1{
+    font-size: 30px;
+  }
 }
+
+
+/* ////////////// */
 
 @media (max-width: 500px){
   .contact-section .contact-container .info,
   .contact-section .contact-container .form{
-    width: 300px;
+    width: 95%;
   }
 
   .contact-section .contact-container .form form{
@@ -337,16 +344,37 @@
   }
 
   .wrapper i {
-    /* display: none; */
-    z-index: 10;
+    display: none;
   }
 
   #cursor{
     display: none;
   }
 
+  .carousel .card{
+    padding-bottom: 28px;
+  }
+
   .card .img img{
-    width: 200px;
-    
+    width: 320px;
+    height: 230px;
+  }
+
+  .wrapper{
+    padding: 0 10px;
+  }
+
+  .wrapper p{
+    font-size: 16px;
+  font-weight: 400;
+  }
+
+  .contact-section .contact-container .form{
+    padding: 15px;
+    width: 95%;
+  }
+
+  .contact-section{
+    padding: 50px 0;
   }
 }

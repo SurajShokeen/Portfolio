@@ -200,6 +200,7 @@
           <h2>VR</h2>
         </li>
       </ul>
+      <p> < Swipe for more ></p>
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
 
@@ -349,18 +350,19 @@
           </ul>
         </div>
         <div class="form">
-          <form>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="9fb57f11-520d-45c5-a935-c2fc96b10d9b">
             <h2>Send Message</h2>
             <div class="input-box">
-              <input type="text" name="" required="required" />
+              <input type="text" name="name" required="required" />
               <span>Full Name</span>
             </div>
             <div class="input-box">
-              <input type="text" name="" required="required" />
+              <input type="email" name="email" required="required" />
               <span>Email</span>
             </div>
             <div class="input-box">
-              <textarea required="required"></textarea>
+              <textarea required="required" name="message"></textarea>
               <span>Type your message...</span>
             </div>
             <div class="input-box">

@@ -483,6 +483,7 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
+  z-index: 99;
 }
 .wrapper i:active {
   transform: translateY(-50%) scale(0.85);
@@ -503,6 +504,7 @@ body {
   border-radius: 8px;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  /* z-index: -1; */
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -553,6 +555,7 @@ body {
   /* height: 140px; */
   /* border-radius: 50%; */
   object-fit: cover;
+  border-radius: 8px;
   /* border: 4px solid #fff; */
 }
 .carousel .card h2 {
@@ -565,6 +568,14 @@ body {
 .carousel .card span {
   color: #6a6d78;
   font-size: 1.31rem;
+}
+
+.wrapper p{
+  color: #fff;
+  position: absolute;
+  bottom: 8%;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 900px) {
@@ -1097,4 +1108,3 @@ footer span {
   font-weight: 500;
 }
 
-/* /////////////////////////////////////// */
