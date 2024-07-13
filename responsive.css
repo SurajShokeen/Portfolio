@@ -377,4 +377,12 @@
   .contact-section{
     padding: 50px 0;
   }
+
+  .service{
+    display:block;
+  }
+
+  .service-section{
+    display: none;
+  }
 }
