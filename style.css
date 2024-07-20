@@ -669,6 +669,10 @@ body {
   z-index: 3;
 }
 
+.skills-section .content .right-div .comm{
+  font-size: 12px;
+}
+
 .skills-section .blob {
   position: absolute;
   top: 0;
