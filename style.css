@@ -542,14 +542,14 @@ body {
 .carousel .card:hover{
   background: #7edd0f;
 }
-
+/* 
 .carousel .card .img {
-  /* background: #8B53FF; */
+  background: #8B53FF; */
   /* width: 400px;
   height: 200px; */
   /* border-radius: 50%; */
-  /* position: relative; */
-}
+  /* position: relative;
+} */
 .card .img img {
   width: 400px;
   height: 200px;
