@@ -686,7 +686,7 @@ body {
 
 @keyframes move {
   0% {
-    transform: scale(1) translate(10px, -30px);
+    transform: scale(1.1) translate(10px, -30px);
   }
   38% {
     transform: scale(0.8, 1) translate(110vw, 40vh) rotate(160deg);
@@ -701,7 +701,7 @@ body {
     transform: scale(1.3) translate(0vw, 45vh) rotate(-20deg);
   }
   100% {
-    transform: scale(1) translate(10px, -30px);
+    transform: scale(1.1) translate(10px, -30px);
   }
 }
 
